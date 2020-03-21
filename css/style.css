@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+/*----------Base Element Styles --------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans, sans-serif';
+    text-align: center;
+    line-height: 1.6;
+    color: #020202;
+    font: 1em;
+    background-color: rgb(238, 228, 228);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1em;
+    font-weight: normal;
+    line-height:1.5;
+    padding: 0 30px;
+    margin: 0;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0 15px;
+    margin: 0;
+}
+
+nav li {
+    display: block;
+    background: white;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: .5px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    margin: 30px auto;
+}
+
+/*---Classes---*/
+
+.intro-container {
+    padding: 30px 0 20px;
+}
+
+.name {
+    font-size: 1.6em;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.profile-image {
+    object-fit: cover;
+    width: 50%;
+    margin-bottom: 20px;
+}  
+
+.section-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-container {
+    margin: 50px 0;
+}
+
+.contact {
+    margin: 0 0 35px;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details span  {
+    margin-left: 5px;
+}
+
+.footer-name,
+.back-to-top,
+.footer-nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.footer-name (
+    float: left;
+    margin: 0;
+    font-size: .9em;
+)
+
+.back-to-top,
+.footer-nav {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.back-to-top {
+    float: right;
+}
+
+.footer-nav li{
+    display: none;
+}
+
+/* ----- Portfolios -------*/
+
+.portfolio-container {
+    background: white;
+    padding-bottom: 30px;
+}
+
+.portfolio {
+    padding: 45px 0;
+    margin: 0;
+}
+
+.card {
+    margin: 0 auto 35px;
+    width: 90%;
+}
+
+.card p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.20;
+    padding: 0 10px 0;
+    margin: 10px 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-title {
+    margin: 30px 0 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*----Links----*/
+
+a:link, a:visited {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+/*----Clearfix----*/
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-------Media Queries------*/
+
+@media (min-width: 768px){
+
+    header {
+        padding-bottom: 40px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav li {
+        background: transparent;
+        display: inline-block;
+        padding: 0 15px;
+        margin: 30px 0 60px;
+    }
+
+    footer {
+        width: 95%;
+        margin-bottom: 60px;
+    }
+
+    .intro-container {
+        padding: 0;
+        margin: 0 0 30px;
+    }
+
+    .intro-container p {
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.5;
+        float: left;
+        width:50%;
+        padding-right: 25px;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .name {
+        margin:30px 0 0;
+        padding: 0;
+    }
+
+    .profile-image {
+        object-fit: cover;
+        width: 40px;
+        height: 250px;
+        float: right;
+        margin: 0;
+    }
+
+.quote-container p {
+    font-size: 1em;
+}
+
+.blurb {
+    width: 70%;
+    margin: 0 auto 40px;
+    line-height: 1;
+}
+
+.blurb, .details {
+    font-size: 1.3em;
+}
+
+.details {
+    line-height: 5px;
+}
+
+.back-to-top {
+    display: none;
+}
+
+.footer-nav {
+    float: right;
+    margin: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+.portfolio-container {
+    padding: 0 30px 15px;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    padding: 0 8px;
+}
+
+}
+
+/*---1024px Media----*/
+
+@media (min-width: 1024px) {
+
+    header {
+        margin: 40px auto 30px;
+    }
+
+    nav ul {
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    footer {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      .name {
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .intro-container {
+        padding-top: 50px;
+        margin: 0;
+      }
+    
+      .intro-container p {
+        padding-right: 60px;
+      }
+    
+      .card {
+        width: calc(100% / 3);
+        padding: 0 10px 40px;
+        margin: 0;
+      }
+    
+      .portfolio {
+        padding: 60px 0;
+      }
+    
+      .quote-container p {
+        font-size: 1.3em;
+      }
+    
+      .contact-container {
+        margin-bottom: 70px;
+      }
+    
+      .footer-nav li {
+        font-size: 1em;
+      }
+    
+    }
+    

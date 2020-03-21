@@ -6,67 +6,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
+    
     <body>
-        <header class="main-header">
-            <div class="container">
-                <h1 class="student-name">Wesley Hui</h1>
-                <nav class="main-nav">
-                    <ul class="main-nav">
+        <div class="container">
+            <header class="clearfix">
+                <h1 class="name">Wesley Hui</h1>
+                <nav>
+                    <ul>
                         <li><a href="#top">Home</a></li>
                         <li><a href="#portoflio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                
-                <img src=images/responsive-layout-profile.png alt="Photo of Wesley" class="portfolio-image clearfix">
-                <p class=tagline>Hi! I am a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-            </div>
-        </header>
+        <div class="intro-container clearfix">
+                <img src=images/responsive-layout-profile.png alt="Photo of Wesley" class="portfolio-image">
+                <p>Hi! I am a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+            </header>
 
-        <main class="main-content">
-            <div class="container">
-                <section class="primary-content" id="portfolio">
-                    <h2>Marketing Page</h2>
-                        <img src="images/portfolio-1.png" alt="image for marketing page">
-                        <h3>Marketing Page</h3>
-                        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-                    
-                        <img src="images/portfolio-2.png" alt="image for search page">
-                        <h3>Search Page</h3>
-                        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-
-                        <img src="images/portfolio-3.png" alt="image for travel app">
-                        <h3>Travel App</h3>
-                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-
-                        <img src="images/portfolio-4.png" alt="image for map of favorite spots">
-                        <h3>Map of Favorite Spots</h3>
-                        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-
-                        <img src="images/portfolio-5.png" alt="image for photo gallery">
-                        <h3>Photo Gallery</h3>
-                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
-
-                        <img src="images/portfolio-6.png" alt="image for calcuator">
-                        <h3>Calculator</h3>
-                        <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
-
+        <main>
+            <div class="portfolio-container clearfix">
+                <h2 class="section-title portfolio">Portfolio</h2>
+                <section class="card marketing">
+                    <img class="project-img" src="images/portfolio-1.png" alt="">
+                    <h3 class="project-title">Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm in interested in.</p>
                 </section>
-                <section>
-                    <h2>Contact</h2>
-                        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-                        <p class="info">Phone &nbsp;&nbsp; <span>+1 (123) 456-7890</span></p>
-                        <p class="info">Phone &nbsp;&nbsp; <span>wesleyhui21@gmail.com</span></p>
-
+            
+                <section class="card search">
+                    <img class="project-img" src="images/portfolio-2.png" alt="">
+                    <h3 class="project-title">Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
                 </section>
-            </div>
+
+                <section class="card travel">
+                    <img class="project-img" src="images/portfolio-3.png" alt="">
+                    <h3 class="project-title">Marketing Page</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </section>
+
+                <section class="card map">
+                    <img class="project-img" src="images/portfolio-4.png" alt="">
+                    <h3 class="project-title">Map of Favourite Spots</h3>
+                    <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+                  </section>
+      
+                  <section class="card gallery">
+                    <img class="project-img" src="images/portfolio-5.png" alt="">
+                    <h3 class="project-title">Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                  </section>
+      
+                  <section class="card calc">
+                    <img class="project-img" src="images/portfolio-6.png" alt="">
+                    <h3 class="project-title">Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                  </section>
+                </div>
+
+                <div class="contact-container">
+                    <h2 class="section-title contact" id="contact">Contact</h2>
+                    <p class="blurb">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                    <p class="details">Phone <span><strong>+1 (510) 825-8618</strong></span></p>
+                    <p class="details">Email <span><strong>wesleyhui21@gmail.com</strong></span></p>
+                  </div>
+
         </main>
 
-        <footer class="main-footer clearfix">
-            <h4 class="name">Wesley Hui</h4>
-            <h4 class="back-to-top clearfix"><a href="#top">Back to Top</a></h4>
+        <footer class="clearfix">
+            <span class="footer-name">Wesley Hui</span>
+            <span class="back-to-top">Back to Top</span>
+            <ul class="footer-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </footer>
+        </div>
     </body>
 </html>
