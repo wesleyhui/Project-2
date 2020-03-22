@@ -20,12 +20,13 @@ body {
 header {
     padding: 20px 0;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 header p {
     font-size: 1em;
     font-weight: normal;
-    line-height:1.5;
+    line-height: 1.5;
     padding: 0 30px;
     margin: 0;
 }
@@ -69,7 +70,7 @@ footer {
 
 .profile-image {
     object-fit: cover;
-    width: 50%;
+    width: 60%;
     margin-bottom: 20px;
 }  
 
@@ -163,6 +164,10 @@ footer {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.travel {
+    clear: both;
+}
+
 /*----Links----*/
 
 a:link, a:visited {
@@ -208,7 +213,7 @@ a:link, a:visited {
     .intro-container p {
         text-align: left;
         font-size: 1.5em;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.5;
         float: left;
         width:50%;
@@ -338,6 +343,10 @@ a:link, a:visited {
     
       .footer-nav li {
         font-size: 1em;
+      }
+
+      .travel {
+          clear: none;
       }
     
     }
